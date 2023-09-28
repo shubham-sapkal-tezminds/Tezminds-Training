@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1 style="text-align:center">Calculator App</h1>
+
+    <div class="container">
+
+    <br>
+
+   <div class="display">
+     <input type='text' id='result' class ='screen' style="text-align: right;">
+     <input type='button' value = 'del' onclick="deleteNum()" class="clear"/>
+     <input type='button' value = 'C' onclick="clearScreen()" class="clear"/>
+   </div>
+
+          
+
+    <div class="keys">
+
+    <input type="button" value="7" class="button" onClick="displayValue('7')"></input>
+
+    <input type="button" value="8" class="button " onClick="displayValue('8')"></input>
+
+    <input type="button" value="9" class="button" onClick="displayValue('9')"></input>
+
+    <input type="button" value="/" class="operator" onClick="displayValue('/')"></input>
+
+    <input type="button" value="4" class="button" onClick="displayValue('4')"></input>
+
+    <input type="button" value="5" class="button" onClick="displayValue('5')"></input>
+
+    <input type="button" value="6" class="button" onClick="displayValue('6')"></input>
+
+    <input type="button" value="*" class="operator" onClick="displayValue('*')"></input>
+
+    <input type="button" value="1" class="button" onClick="displayValue('1')"></input>
+
+    <input type="button" value="2" class="button" onClick="displayValue('2')"></input>
+
+    <input type="button" value="3" class="button" onClick="displayValue('3')"></input>
+
+    <input type="button" value="-" class="operator" onClick="displayValue('-')"></input>
+
+    <input type="button" value="0" class="button" onClick="displayValue('0')"></input>
+
+    <input type="button" value="." class="button" onClick="displayValue('.')"></input>
+
+    <input type="button" value= "=" class="button equal-sign" onClick="solve()"></input>
+
+    <input type="button" value="+" class="operator" onClick="displayValue('+')"></input>
+
+</div> 
+
+</div>
+
+
+  
+    <script src="index.js"></script>
+  </body>
+</html>
